@@ -29,8 +29,10 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass'
 
 group :test do
+	gem 'capybara'
 	gem 'cucumber-rails', :require => false
 	gem 'database_cleaner'
+	gem 'rspec-rails'
 end
 
 # Use ActiveModel has_secure_password
