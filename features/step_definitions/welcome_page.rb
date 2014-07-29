@@ -14,6 +14,6 @@ Given(/^I click on "(.*?)"$/) do |clicky|
 end
 
 Then(/^I should be on the London restaurant page$/) do
-  pending # express the regexp above with the code you wish you had
+  expect(current_path).to eq('restaurants/london')
 end
 
