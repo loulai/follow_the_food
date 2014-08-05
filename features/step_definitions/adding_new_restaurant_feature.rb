@@ -10,5 +10,5 @@ Then(/^I should see a whole bunch of fields to fill in$/) do
 end
 
 Then(/^I should see a 'Save Restaurant' button$/) do
-  pending # express the regexp above with the code you wish you had
+  expect(page).to have_button 'Save Restaurant'
 end
