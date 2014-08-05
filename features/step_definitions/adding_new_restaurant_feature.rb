@@ -15,11 +15,10 @@ end
 
 Given(/^I visit the homepage after adding a new restaurant$/) do
   visit '/restaurants/new'
-
 end
 
 Given(/^I fill in "(.*?)" with "(.*?)"$/) do |field, content|
-  fill_in 'field', with: 'content'
+    fill_in(field, :with => content)
 end
 
 Given(/^I click "(.*?)"$/) do |arg1|
