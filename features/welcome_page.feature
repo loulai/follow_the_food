@@ -8,4 +8,4 @@ Scenario: Seeing the countries on the homepage
 
 Scenario: Clicking on a country
 	Given I click on "London"
-	Then I should be on the London restaurant page
+	Then I should be on the restaurant page
