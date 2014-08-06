@@ -21,10 +21,6 @@ Given(/^I fill in "(.*?)" with "(.*?)"$/) do |field, content|
     fill_in(field, :with => content)
 end
 
-Given(/^I click "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
-end
-
 Then(/^I should be redirected to the homepage$/) do
   pending # express the regexp above with the code you wish you had
 end
