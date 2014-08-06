@@ -1,1 +1,8 @@
 <h1>Restaurants</h1>
+
+<%= @restaurants.each do |restaurant| %>
+	<h1><% restaurant.name %></h1><br>
+	<% restaurant.city %><br>
+	<% restaurant.description %><br>
+	<% restaurant.location %><br>
+<% end %>

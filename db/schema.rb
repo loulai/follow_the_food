@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20140805065308) do
 
   create_table "restaurants", force: true do |t|
     t.string   "name"
-    t.string   "country"
+    t.string   "city"
     t.text     "description"
     t.text     "location"
     t.datetime "created_at"
