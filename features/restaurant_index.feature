@@ -4,4 +4,4 @@ you see a big list of all the restaurants.
 Scenario: Seeing a list of restaurants
 	Given I visit the restaurants page
 	And There is a restaurant added
-	Then I should see the details of that restaurant, like its name and city 
+	Then I should see the details of that restaurant like its name and city 

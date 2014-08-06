@@ -7,7 +7,7 @@ Given(/^There is a restaurant added$/) do
   expect(Restaurant.all.count).to eq 1
 end
 
-Then(/^I should see the details of that restaurant, like its name and city$/) do
+Then(/^I should see the details of that restaurant like its name and city$/) do
 	expect(page).to have_content "Bocca Di Lupo"
 	expect(page).to have_content "London"
 end
