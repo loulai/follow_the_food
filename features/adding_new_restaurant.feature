@@ -5,8 +5,8 @@ Scenario: Seeing the correct fields to fill in
 	Then I should see a whole bunch of fields to fill in 
 	And I should see a 'Save Restaurant' button
 
-Scenario: Filling in the fields and clicking 'Save Restaurant'
+Scenario: Making a new restaurant entry
 	Given I visit the new restaurant page
 	And I fill in details for a restaurant called "Bocca Di Lupo", London
 	And I click on "Save Restaurant"
-	Then I should see my new post
+	Then I should see my newly created post
