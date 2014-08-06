@@ -18,13 +18,11 @@ Given(/^I visit the homepage after adding a new restaurant$/) do
 end
 
 Given(/^I fill in "(.*?)" with "(.*?)"$/) do |field, content|
-    fill_in(field, :with => content)
+  fill_in(field, :with => content)
 end
 
-Then(/^I should be redirected to the homepage$/) do
-  pending # express the regexp above with the code you wish you had
+Then(/^I should see my new post$/) do
+	expect(current_path).to eq 'restaurants/1'
+	expect(page).to have_content 'Bocca Di Lupo'
 end
 
-Then(/^I should see my newly added restaurant$/) do
-  pending # express the regexp above with the code you wish you had
-end

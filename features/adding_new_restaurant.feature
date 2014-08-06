@@ -12,5 +12,4 @@ Scenario: Filling in the fields and clicking 'Save Restaurant'
 	And I fill in "Description" with "It was such a fab experience!"
 	And I fill in "Location" with "12 Archer St, London W1D 7BB, United Kingdom"
 	And I click on "Save Restaurant"
-	Then I should be redirected to the homepage
-	And I should see my newly added restaurant
+	Then I should see my new post
