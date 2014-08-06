@@ -24,5 +24,14 @@ end
 Then(/^I should see my new post$/) do
 	expect(current_path).to eq '/restaurants/1'
 	expect(page).to have_content 'Bocca Di Lupo'
+	expect(page).to have_content 'England'
+	expect(page).to have_content 'It was such a fab experience!'
+	expect(page).to have_content '12 Archer St, London W1D 7BB, United Kingdom'
 end
 
+Given(/^I fill in details for a restaurant called "(.*?)", London$/) do |restaurant_name|
+  fill_in("Name", :with => restaurant_name)
+  fill_in("Country", :with => "England")
+  fill_in("Description", :with => "It was such a fab experience!")
+  fill_in("Location", :with => "12 Archer St, London W1D 7BB, United Kingdom")
+end

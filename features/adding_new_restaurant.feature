@@ -7,9 +7,6 @@ Scenario: Seeing the correct fields to fill in
 
 Scenario: Filling in the fields and clicking 'Save Restaurant'
 	Given I visit the new restaurant page
-	And I fill in "Name" with "Bocca Di Lupo"
-	And I fill in "Country" with "London"
-	And I fill in "Description" with "It was such a fab experience!"
-	And I fill in "Location" with "12 Archer St, London W1D 7BB, United Kingdom"
+	And I fill in details for a restaurant called "Bocca Di Lupo", London
 	And I click on "Save Restaurant"
 	Then I should see my new post
