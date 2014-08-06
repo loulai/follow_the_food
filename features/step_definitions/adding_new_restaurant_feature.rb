@@ -22,7 +22,7 @@ Given(/^I fill in "(.*?)" with "(.*?)"$/) do |field, content|
 end
 
 Then(/^I should see my new post$/) do
-	expect(current_path).to eq 'restaurants/1'
+	expect(current_path).to eq '/restaurants/1'
 	expect(page).to have_content 'Bocca Di Lupo'
 end
 
