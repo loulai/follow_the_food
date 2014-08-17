@@ -20,7 +20,7 @@ Then(/^I should see all the details of that restaurant$/) do
   expect(page).to have_content 'Bocca Di Lupo'
 	expect(page).to have_content 'London'
 	expect(page).to have_content 'An amazing Italian place. The absolute best.'
-	expect(page).to have_content '12 Archer St, London W1D 7BB, United Kingdom
+	expect(page).to have_content '12 Archer St, London W1D 7BB, United Kingdom'
 end
 
 
