@@ -22,10 +22,12 @@ Given(/^I visit the restaurant's show page$/) do
   visit 'restaurants/1'
 end
 
-
-
 #--- querying page path
 
 Then(/^I should be on the restaurant page$/) do
   expect(current_path).to eq('/restaurants')
+end
+
+Then(/^I should be on that restaurant's 'show more' page$/) do
+  expect(current_path).to eq('/restaurants/1')
 end
