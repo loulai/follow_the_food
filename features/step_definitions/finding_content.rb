@@ -15,6 +15,15 @@ Then(/^I should see my newly created post back in the homepage/) do
 	expect(current_path).to eq '/restaurants/1'
 end
 
+
+Then(/^I should see all the details of that restaurant$/) do
+  expect(page).to have_content 'Bocca Di Lupo'
+	expect(page).to have_content 'London'
+	expect(page).to have_content 'An amazing Italian place. The absolute best.'
+	expect(page).to have_content '12 Archer St, London W1D 7BB, United Kingdom
+end
+
+
 #--- finding fields
 
 Then(/^I should see a whole bunch of fields to fill in$/) do
