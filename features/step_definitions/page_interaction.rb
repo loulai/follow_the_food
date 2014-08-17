@@ -15,3 +15,7 @@ end
 Given(/^I click on "(.*?)"$/) do |clicky|
 	click_on clicky
 end
+
+Given(/^I click on the restaurant's name$/) do
+  click_on 'Bocca Di Lupo'
+end
