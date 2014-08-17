@@ -7,7 +7,7 @@ Then(/^I should see a list of countries$/) do
   expect(page).to have_content "Kuala Lumpur"
 end
 
-Then(/^I should see my newly created post$/) do
+Then(/^I should see my newly created post back in the homepage/) do
 	expect(page).to have_content 'Bocca Di Lupo'
 	expect(page).to have_content 'London'
 	expect(page).to have_content 'It was such a fab experience!'
@@ -32,6 +32,12 @@ end
 
 Then(/^I should see button "(.*?)"$/) do |button_name|
 	expect(page).to have_button button_name
+end
+
+#--- finding links
+
+Then(/^I should see link "(.*?)"$/) do |link_name|
+  expect(page).to have_content link_name
 end
 
 # Then(/^I should see the details of that restaurant like its name and city$/) do

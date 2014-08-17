@@ -9,4 +9,4 @@ Scenario: Making a new restaurant entry
 	Given I visit the new restaurant page
 	And I fill in details for a restaurant called "Bocca Di Lupo", London
 	And I click on "Save Restaurant"
-	Then I should see my newly created post
+	Then I should see my newly created post back in the homepage
