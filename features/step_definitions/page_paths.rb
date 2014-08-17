@@ -22,6 +22,11 @@ Given(/^I visit the restaurant's show page$/) do
   visit 'restaurants/1'
 end
 
+Given(/^I visit the edit restaurant page$/) do
+  visit '/restaurants/1/edit'
+end
+
+
 #--- querying page path
 
 Then(/^I should be on the restaurant page$/) do
