@@ -27,6 +27,7 @@ class RestaurantsController < ApplicationController
  		if @restaurant.update(params.require(:restaurant).permit(:name, :city, :description, :location))
  			redirect_to @restaurant
  		end
-
  	end
+
+ 
 end

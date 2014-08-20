@@ -1,7 +1,7 @@
 Feature: Editing a restaurant's details
 
 Background: Basic requirements to edit a restaurant
-	Given There is a restaurant added
+	Given there is a restaurant added
 	And I visit the edit restaurant page
 
 Scenario: Editing the restaurant's description

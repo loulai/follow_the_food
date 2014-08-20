@@ -2,7 +2,7 @@ Feature: The restaurant index page is the homepage. This is where
 you see a big list of all the restaurants.
 
 Background: There is a restaurant added
-	Given There is a restaurant added
+	Given there is a restaurant added
 	And I visit the restaurants page
 
 Scenario: Seeing a list of restaurants
