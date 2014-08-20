@@ -31,6 +31,13 @@ Then(/^I should see my updated content, "(.*?)"$/) do |updated_content|
 	expect(page).to have_content updated_content
 end
 
+#--- NOT finding stuff
+
+Then(/^I should not see that restaurant in the homepage$/) do
+  expect(current_path).to eq '/restaurants'
+  expect(page).not_to have_content "Bocca"
+end
+
 
 #--- finding fields
 
