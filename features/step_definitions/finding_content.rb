@@ -43,9 +43,11 @@ end
 
 #--- finding buttons
 
-Then(/^I should see a 'Save Restaurant' button$/) do
-  expect(page).to have_button 'Save Restaurant' 
+Then(/^I should see a "(.*?)" button$/) do |button_name|
+ 	expect(page).to have_button button_name
 end
+
+
 
 Then(/^I should see button "(.*?)"$/) do |button_name|
 	expect(page).to have_button button_name
