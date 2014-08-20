@@ -27,6 +27,10 @@ Then(/^I should see all the details of that restaurant$/) do
 	expect(page).to have_content '12 Archer St, London W1D 7BB, United Kingdom'
 end
 
+Then(/^I should see my updated content, "(.*?)"$/) do |updated_content|
+	expect(page).to have_content updated_content
+end
+
 
 #--- finding fields
 

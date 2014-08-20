@@ -8,5 +8,5 @@ Scenario: Editing the restaurant's description
 	When I fill in "Description" with "Updated: recently closed"
 	And I click on "Save Restaurant"
 	Then I should be on that restaurant's 'show more' page
-	And I should see my updated field
+	And I should see my updated content, "Updated: recently closed"
 
